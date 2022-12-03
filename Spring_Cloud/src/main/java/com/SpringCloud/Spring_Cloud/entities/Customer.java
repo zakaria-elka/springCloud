@@ -1,4 +1,4 @@
-package com.SpringCloud.Spring_Cloud.Entities;
+package com.SpringCloud.Spring_Cloud.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -11,10 +11,7 @@ import lombok.ToString;
 
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
-@Data
+@Data @NoArgsConstructor @AllArgsConstructor @ToString
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
